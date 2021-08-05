@@ -27,15 +27,14 @@ Below are the 5 items which they currently serve to their customers,
 4. Veg Farmhouse(Cheese, capsicum, onion, red paprika, black olives, corn) - Price 300
 5. Margarita(Cheese) - Price 225
 
-##### Toppings
+#### Toppings
 - Cheese: Price 20
 - Olives: Price 20
 - Onion: Price 10
 - Chicken: Price 25
 - Cottage Cheese: Price 15
 
-##### Bread Types
-
+#### Bread Types
 - Regular (Default)
 - Thin crust: Price 20
 - Cheese crust: Price 25
@@ -43,7 +42,7 @@ Below are the 5 items which they currently serve to their customers,
 
 The 5 items served could be served with a default price that is tagged against each of the pizza mentioned, or a user can actually order it with added toppings mentioned in the toppings section. The price would add up in the pizza as a final price. Alternatively a user can also request to remove a topping from the default menu and the price for that particular topping would then be reduced from the default menu item.
 
-The solution should take orders in the form of a string array something like [“Chicken Supreme, cheese, olives, Thin Crust”,“Veggie Supreme, cheese, -onion”] and should return the total value of the order.
+The solution should take orders in the form of a string array something like [“Chicken Supreme, cheese, olives, Thin Crust”, “Veggie Supreme, cheese, -onion”] and should return the total value of the order.
 
 For storing the menu options and the prices in memory objects like Map or Enum etc. could be used.
 
@@ -76,9 +75,11 @@ Price of Thin Crust: 20
 Price of Onion removed: 10
 The price of this order would then become: (350+20+15+20+20)-10 = 415
 
+## Solution
+![Solution](./Solution.png)
 
-## How to run the solution
+### How to run the solution
 Open terminal at ./GoPizza and run `dotnet run`
 
-## How to run the tests
+### How to run the tests
 Open terminal at ./GoPizza.Fixture and run `dotnet test`
